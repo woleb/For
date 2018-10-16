@@ -17,12 +17,20 @@ class MainActivity : AppCompatActivity() {
         }
         textfeld.text = text
 */
+
         var text =listOf("Hallo " , "test" , " noch etwas")
         var ausgabe = ""
-        for (i in text){
+/*        for (i in text){
             ausgabe = ausgabe + i
         }
-        textfeld.text = ausgabe
+        */
+
+        var i = 0
+        while (i < 10) {
+            textfeld.text = i.toString()
+            ++i // i = i + 1
+        }
+        //textfeld.text = ausgabe
 
     }
 }
